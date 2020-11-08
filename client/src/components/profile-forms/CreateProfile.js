@@ -10,7 +10,7 @@ const CreateProfile = ({createProfile,history}) => {
     location: "",
     bio: "",
     status: "",
-    githubUsername: "",
+    githubusername: "",
     skills: "",
     youtube: "",
     facebook: "",
