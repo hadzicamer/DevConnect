@@ -7,7 +7,6 @@ const Post = require("../../models/Post");
 const { check, validationResult, body } = require("express-validator");
 const request = require("request");
 const config = require("config");
-const { response } = require("express");
 
 //get current
 router.get("/me", auth, async (req, res) => {
