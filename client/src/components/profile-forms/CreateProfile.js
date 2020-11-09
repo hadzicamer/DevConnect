@@ -27,7 +27,7 @@ const CreateProfile = ({createProfile,history}) => {
     location,
     bio,
     status,
-    githubusername,
+    githubUsername,
     skills,
     youtube,
     facebook,
@@ -121,8 +121,8 @@ const CreateProfile = ({createProfile,history}) => {
           <input
             type='text'
             placeholder='Github Username'
-            name='githubusername'
-            value={githubusername}
+            name='githubUsername'
+            value={githubUsername}
             onChange={(e) => onchange(e)}
           />
           <small className='form-text'>
@@ -219,8 +219,6 @@ const CreateProfile = ({createProfile,history}) => {
   );
 };
 
-// CreateProfile.propTypes={
-//     createProfile:PropTypes.func.isRequired,
-// }
 
-export default connect(null,{createProfile})(withRouter(CreateProfile));
+
+export default connect(null,{createProfile})(CreateProfile);

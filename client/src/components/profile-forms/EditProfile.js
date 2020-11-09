@@ -34,7 +34,7 @@ const EditProfile = ({
       location: loading || !profile.location ? "" : profile.location,
       status: loading || !profile.status ? "" : profile.status,
       skills: loading || !profile.skills ? "" : profile.skills.join(","),
-      githubusername:loading || !profile.githubusername ? "" : profile.githubusername,
+      githubUsername:loading || !profile.githubUsername ? "" : profile.githubUsername,
       bio: loading || !profile.bio ? "" : profile.bio,
       twitter: loading || !profile.social ? "" : profile.social.twitter,
       facebook: loading || !profile.social ? "" : profile.social.facebook,
@@ -50,7 +50,7 @@ const EditProfile = ({
     location,
     bio,
     status, 
-    githubusername,
+    githubUsername,
     skills,
     youtube,
     facebook,
@@ -144,8 +144,8 @@ const EditProfile = ({
           <input
             type='text'
             placeholder='Github Username'
-            name='githubusername'
-            value={githubusername}
+            name='githubUsername'
+            value={githubUsername}
             onChange={(e) => onchange(e)}
           />
           <small className='form-text'>
@@ -232,7 +232,6 @@ const EditProfile = ({
             </div>
           </Fragment>
         )}
-
         <input type='submit' className='btn btn-primary my-1' />
         <Link className='btn btn-light my-1' to='/dashboard'>
           Go Back

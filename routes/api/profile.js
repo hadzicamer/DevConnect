@@ -48,7 +48,7 @@ router.post(
       location,
       bio,
       status,
-      githubusername,
+      githubUsername,
       skills,
       youtube,
       facebook,
@@ -67,7 +67,7 @@ router.post(
     if (location) profileFileds.location = location;
     if (bio) profileFileds.bio = bio;
     if (status) profileFileds.status = status;
-    if (githubusername) profileFileds.githubusername = githubusername;
+    if (githubUsername) profileFileds.githubUsername = githubUsername;
 
     if (skills) {
       profileFileds.skills = skills.split(",").map((skill) => skill.trim());
